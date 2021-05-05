@@ -192,10 +192,18 @@
       bool b2=std::get<0>(vec_points.at(0)) < 0;
       bool b3=std::get<1>(vec_points.at(0)) > 400;
       bool b4=std::get<1>(vec_points.at(0)) < 0;
-
+      i2tuple head = vec_points.at(0);
       if(b1 or b2 or b3 or b4){
         return true;
       }
+      std::vector<i2tuple>::iterator it=vec_points.begin(); 
+      it++;
+      for(; it!=vec_points.end();it++){
+        if((std::get<1>(head) == std::get<1>(*it))  and (std::get<0>(head) == std::get<0>(*it)) ){
+          return true;
+        }
+      }
+
       return false;
     }
 
