@@ -1,4 +1,4 @@
-simple sudoku validator written in python. checks if rows, columns or boxes contain a duplicate number. accepts a 2d array as input, like so:
+Simple sudoku validator written in python. Checks if rows, columns or boxes contain a duplicate number. Accepts a 2d array as input, like so:
   [[5, 3, 4, 6, 7, 8, 9, 1, 2],
   [6, 7, 2, 1, 9, 5, 1, 4, 8],
   [1, 1, 8, 3, 2, 2, 5, 6, 7],
