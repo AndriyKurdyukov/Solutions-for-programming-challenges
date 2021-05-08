@@ -6,18 +6,16 @@
 
 
 int main(){
-    Snake sn=Snake{200,200,Up,2};
-    Food f= Food{i2tuple(100,200)};
-    int width=400;
-    int height=400;
+    Snake sn = Snake{200,200,Up,2};  //set postion of the snake to 200,200, length to 2, and direction to "up"
+    Food f = Food{i2tuple(100,200)};
+    int width = 400;
+    int height = 400;
     sf::RenderWindow window(sf::VideoMode(width, height), "Snake");
     sf::Time elapsed;
     sf::Clock clock;
     sf::Text text;
     sf::RectangleShape rect;
-    
     std::vector<i2tuple> info;
- 
     while (window.isOpen())
     {
         // check all the window's events that were triggered since the last iteration of the loop
@@ -30,12 +28,10 @@ int main(){
             {
               if (event.key.code == sf::Keyboard::Left)
               {
-          //      std::cout << "the left key was pressed" << std::endl;
                 sn.turn(Right);
               }
               if (event.key.code == sf::Keyboard::Right)
               {
-               // std::cout << "the right key was pressed" << std::endl;
                 sn.turn(Left);
               }
 
@@ -60,7 +56,7 @@ int main(){
           f.uneat(i2tuple(((rand()%width+1)/10)*10, ((rand()%height+1)/10)*10  ));
         }
  
-        elapsed=clock.getElapsedTime();
+        elapsed = clock.getElapsedTime();
         if(elapsed>sf::milliseconds(100)){
           sn.eat_food(f);
           sn.move_vec_forward();
@@ -72,9 +68,7 @@ int main(){
           std::cout<<"GAME OVER."<<std::endl;
         }
         // end the current frame
-        
         window.display();
     }
-  
   return 0;
 }
