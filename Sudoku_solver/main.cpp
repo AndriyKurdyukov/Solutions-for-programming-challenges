@@ -1,3 +1,8 @@
+/*
+Author: Andriy Kuryukov
+Year: 2021
+This code is a part of my hobby project and is free to use and redistribute in any form.
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
