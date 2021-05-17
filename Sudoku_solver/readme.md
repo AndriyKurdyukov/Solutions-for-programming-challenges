@@ -1,5 +1,5 @@
 Sudoku solver with backtracking written in c++. Sudokus need to be given in a a text file, in the following form:
-6,0,0,0,0,0,0,0,3
+6,0,0,0,0,0,0,0,3 \n
 0,7,0,2,0,1,0,5,0
 0,0,4,0,0,0,8,0,0
 0,8,0,9,0,6,0,4,0
