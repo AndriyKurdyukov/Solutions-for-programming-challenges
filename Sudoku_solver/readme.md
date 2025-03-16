@@ -1,3 +1,5 @@
+# Sudoku solver
+
 Sudoku solver with backtracking written in c++. Sudokus need to be given in a a text file, in the following form: <br/>
 
 6,0,0,0,0,0,0,0,3 <br/> 
